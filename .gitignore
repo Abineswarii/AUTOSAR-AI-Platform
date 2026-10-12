@@ -1,0 +1,7 @@
+﻿autosar-ai/venv/
+venv/
+**/.env
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+autosar-ai/data/
