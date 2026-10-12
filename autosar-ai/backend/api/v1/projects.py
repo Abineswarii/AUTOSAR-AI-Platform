@@ -50,3 +50,21 @@ def delete_project(project_id: int, db: Session = Depends(get_db)):
     project.status = "archived"
     db.commit()
     return {"message": "Project archived successfully"}
+
+@router.get("/{project_id}/metrics")
+def get_project_metrics(project_id: int, db: Session = Depends(get_db)):
+    project = db.query(models.Project).filter(models.Project.id == project_id).first()
+    if not project:
+        raise HTTPException(status_code=404, detail="Project not found")
+        
+    doc_count = db.query(models.Document).filter(models.Document.project_id == project_id).count()
+    proc_doc_count = db.query(models.Document).filter(models.Document.project_id == project_id, models.Document.status == "READY").count()
+    entity_count = db.query(models.ArchitectureEntity).filter(models.ArchitectureEntity.project_id == project_id).count()
+    finding_count = db.query(models.Finding).filter(models.Finding.project_id == project_id).count()
+    
+    return {
+        "total_documents": doc_count,
+        "processed_documents": proc_doc_count,
+        "total_entities": entity_count,
+        "open_findings": finding_count
+    }

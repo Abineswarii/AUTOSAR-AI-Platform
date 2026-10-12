@@ -14,10 +14,13 @@ class Settings(BaseSettings):
     
     MAX_UPLOAD_MB: int = 50
     
-    LLM_PROVIDER: str = "gemini"
+    LLM_PROVIDER: str = "ollama"
     LLM_API_KEY: str = ""
-    LLM_MODEL: str = "gemini-1.5-pro-latest"
-    LLM_BASE_URL: str = ""
+    LLM_MODEL: str = "llama3.2:3b"
+    LLM_BASE_URL: str = "http://localhost:11434"
+    
+    OLLAMA_BASE_URL: str = "http://localhost:11434"
+    OLLAMA_MODEL: str = "llama3.2:3b"
     
     EMBEDDING_MODEL: str = "all-MiniLM-L6-v2"
     CHUNK_SIZE: int = 1000

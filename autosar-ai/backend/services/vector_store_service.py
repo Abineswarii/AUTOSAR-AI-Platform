@@ -33,10 +33,27 @@ def add_chunks(project_id: int, document_id: int, chunks: list[dict]):
         ids=ids
     )
 
-def search_chunks(project_id: int, query: str, top_k: int = 5):
-    collection = get_collection(project_id)
-    results = collection.query(
-        query_texts=[query],
-        n_results=top_k
-    )
-    return results
+def delete_chunks_by_document(project_id: int, document_id: int):
+    try:
+        collection = get_collection(project_id)
+        collection.delete(where={"document_id": document_id})
+    except Exception:
+        pass
+
+def search_chunks(project_id: int, query: str, top_k: int = 5, document_ids: list[int] = None):
+    try:
+        collection = get_collection(project_id)
+        where_filter = None
+        if document_ids and len(document_ids) == 1:
+            where_filter = {"document_id": document_ids[0]}
+        elif document_ids and len(document_ids) > 1:
+            where_filter = {"document_id": {"$in": document_ids}}
+            
+        kwargs = {"query_texts": [query], "n_results": top_k}
+        if where_filter:
+            kwargs["where"] = where_filter
+            
+        results = collection.query(**kwargs)
+        return results
+    except Exception as e:
+        return {"documents": [[]], "metadatas": [[]], "error": str(e)}

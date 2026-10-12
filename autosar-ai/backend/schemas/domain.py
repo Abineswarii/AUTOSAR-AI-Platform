@@ -33,6 +33,7 @@ class DocumentResponse(DocumentBase):
     project_id: int
     status: str
     page_count: Optional[int]
+    sha256_hash: Optional[str] = None
     metadata_json: Optional[str]
     error_message: Optional[str]
     uploaded_by: Optional[int]
