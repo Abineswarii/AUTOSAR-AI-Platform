@@ -1,0 +1,106 @@
+id,category,expected_behavior,expected_page,target_rank,reciprocal_rank,retrieval_latency_ms,grounding_score,confidence,abstained_honestly
+Q001,Direct Factual Retrieval,ANSWER,7,1,1.0,1285.16,50.0,MEDIUM,
+Q002,Direct Factual Retrieval,ANSWER,7,1,1.0,747.02,50.0,MEDIUM,
+Q003,Direct Factual Retrieval,ANSWER,8,1,1.0,907.71,100.0,HIGH,
+Q004,Direct Factual Retrieval,ANSWER,13,0,0.0,672.04,100.0,HIGH,
+Q005,Direct Factual Retrieval,ANSWER,7,1,1.0,671.65,100.0,HIGH,
+Q006,Direct Factual Retrieval,ANSWER,49,2,0.5,758.2,100.0,HIGH,
+Q007,Direct Factual Retrieval,ANSWER,63,5,0.2,804.37,100.0,HIGH,
+Q008,Direct Factual Retrieval,ANSWER,15,1,1.0,923.33,0.0,LOW,
+Q009,Direct Factual Retrieval,ANSWER,16,0,0.0,831.86,75.0,MEDIUM,
+Q010,Direct Factual Retrieval,ANSWER,17,0,0.0,671.15,33.3,LOW,
+Q011,Multi-hop Reasoning,ANSWER,13,0,0.0,713.87,1.0,HIGH,
+Q012,Multi-hop Reasoning,ANSWER,13,0,0.0,744.22,1.0,HIGH,
+Q013,Multi-hop Reasoning,ANSWER,6,0,0.0,838.55,1.0,HIGH,
+Q014,Multi-hop Reasoning,ANSWER,8,1,1.0,694.07,1.0,HIGH,
+Q015,Multi-hop Reasoning,ANSWER,6,1,1.0,876.52,1.0,HIGH,
+Q016,Multi-hop Reasoning,ANSWER,17,0,0.0,702.06,1.0,HIGH,
+Q017,Multi-hop Reasoning,ANSWER,13,0,0.0,746.23,1.0,HIGH,
+Q018,Multi-hop Reasoning,ANSWER,76,2,0.5,718.44,1.0,HIGH,
+Q019,Multi-hop Reasoning,ANSWER,93,2,0.5,696.02,1.0,HIGH,
+Q020,Multi-hop Reasoning,ANSWER,14,0,0.0,667.99,1.0,HIGH,
+Q021,Component Responsibilities,ANSWER,27,4,0.25,708.81,1.0,HIGH,
+Q022,Component Responsibilities,ANSWER,28,1,1.0,727.42,1.0,HIGH,
+Q023,Component Responsibilities,ANSWER,29,1,1.0,624.43,1.0,HIGH,
+Q024,Component Responsibilities,ANSWER,30,2,0.5,707.44,1.0,HIGH,
+Q025,Component Responsibilities,ANSWER,31,1,1.0,672.03,1.0,HIGH,
+Q026,Component Responsibilities,ANSWER,32,2,0.5,670.3,1.0,HIGH,
+Q027,Component Responsibilities,ANSWER,14,0,0.0,612.49,1.0,HIGH,
+Q028,Component Responsibilities,ANSWER,13,0,0.0,679.76,1.0,HIGH,
+Q029,Component Responsibilities,ANSWER,14,3,0.333,703.06,1.0,HIGH,
+Q030,Component Responsibilities,ANSWER,15,0,0.0,734.96,1.0,HIGH,
+Q031,Interface & Signal Identification,ANSWER,54,4,0.25,693.32,1.0,HIGH,
+Q032,Interface & Signal Identification,ANSWER,54,4,0.25,641.55,1.0,HIGH,
+Q033,Interface & Signal Identification,ANSWER,49,2,0.5,653.29,1.0,HIGH,
+Q034,Interface & Signal Identification,ANSWER,49,2,0.5,672.43,1.0,HIGH,
+Q035,Interface & Signal Identification,ANSWER,49,3,0.333,752.86,1.0,HIGH,
+Q036,Interface & Signal Identification,ANSWER,49,2,0.5,738.57,1.0,HIGH,
+Q037,Interface & Signal Identification,ANSWER,27,1,1.0,690.75,1.0,HIGH,
+Q038,Interface & Signal Identification,ANSWER,60,0,0.0,683.37,1.0,HIGH,
+Q039,Interface & Signal Identification,ANSWER,60,1,1.0,717.4,1.0,HIGH,
+Q040,Interface & Signal Identification,ANSWER,9,0,0.0,814.08,1.0,HIGH,
+Q041,Runnable Schedules & Constraints,ANSWER,44,2,0.5,681.64,1.0,HIGH,
+Q042,Runnable Schedules & Constraints,ANSWER,45,3,0.333,697.19,1.0,HIGH,
+Q043,Runnable Schedules & Constraints,ANSWER,47,0,0.0,852.24,1.0,HIGH,
+Q044,Runnable Schedules & Constraints,ANSWER,19,1,1.0,697.5,1.0,HIGH,
+Q045,Runnable Schedules & Constraints,ANSWER,21,1,1.0,724.94,1.0,HIGH,
+Q046,Runnable Schedules & Constraints,ANSWER,21,1,1.0,753.03,1.0,HIGH,
+Q047,Runnable Schedules & Constraints,ANSWER,18,0,0.0,686.51,1.0,HIGH,
+Q048,Runnable Schedules & Constraints,ANSWER,18,0,0.0,770.93,1.0,HIGH,
+Q049,Runnable Schedules & Constraints,ANSWER,14,0,0.0,797.0,1.0,HIGH,
+Q050,Runnable Schedules & Constraints,ANSWER,91,2,0.5,686.77,1.0,HIGH,
+Q051,Requirements Traceability,ANSWER,13,0,0.0,762.84,1.0,HIGH,
+Q052,Requirements Traceability,ANSWER,13,0,0.0,646.42,1.0,HIGH,
+Q053,Requirements Traceability,ANSWER,15,1,1.0,662.54,1.0,HIGH,
+Q054,Requirements Traceability,ANSWER,14,0,0.0,1038.56,1.0,HIGH,
+Q055,Requirements Traceability,ANSWER,17,4,0.25,682.75,1.0,HIGH,
+Q056,Requirements Traceability,ANSWER,18,0,0.0,727.59,1.0,HIGH,
+Q057,Requirements Traceability,ANSWER,18,0,0.0,668.29,1.0,HIGH,
+Q058,Requirements Traceability,ANSWER,99,1,1.0,710.79,1.0,HIGH,
+Q059,Requirements Traceability,ANSWER,99,4,0.25,695.44,1.0,HIGH,
+Q060,Requirements Traceability,ANSWER,100,5,0.2,687.65,1.0,HIGH,
+Q061,Dependency & Impact Analysis,ANSWER,29,0,0.0,649.65,1.0,HIGH,
+Q062,Dependency & Impact Analysis,ANSWER,45,0,0.0,674.35,1.0,HIGH,
+Q063,Dependency & Impact Analysis,ANSWER,6,2,0.5,684.38,1.0,HIGH,
+Q064,Dependency & Impact Analysis,ANSWER,43,0,0.0,683.26,1.0,HIGH,
+Q065,Dependency & Impact Analysis,ANSWER,7,2,0.5,681.7,1.0,HIGH,
+Q066,Dependency & Impact Analysis,ANSWER,30,2,0.5,761.69,1.0,HIGH,
+Q067,Dependency & Impact Analysis,ANSWER,17,0,0.0,728.91,1.0,HIGH,
+Q068,Dependency & Impact Analysis,ANSWER,21,4,0.25,640.12,1.0,HIGH,
+Q069,Dependency & Impact Analysis,ANSWER,26,0,0.0,664.51,1.0,HIGH,
+Q070,Dependency & Impact Analysis,ANSWER,9,3,0.333,688.29,1.0,HIGH,
+Q071,Safety & Security Constraints,ANSWER,80,1,1.0,585.3,1.0,HIGH,
+Q072,Safety & Security Constraints,ANSWER,20,1,1.0,596.12,1.0,HIGH,
+Q073,Safety & Security Constraints,ANSWER,85,1,1.0,670.35,1.0,HIGH,
+Q074,Safety & Security Constraints,ANSWER,84,0,0.0,619.28,1.0,HIGH,
+Q075,Safety & Security Constraints,ANSWER,20,1,1.0,653.97,1.0,HIGH,
+Q076,Safety & Security Constraints,ANSWER,7,1,1.0,598.15,1.0,HIGH,
+Q077,Safety & Security Constraints,ANSWER,87,1,1.0,639.86,1.0,HIGH,
+Q078,Safety & Security Constraints,ANSWER,6,0,0.0,616.06,1.0,HIGH,
+Q079,Safety & Security Constraints,ANSWER,86,2,0.5,704.3,1.0,HIGH,
+Q080,Safety & Security Constraints,ANSWER,15,0,0.0,628.0,1.0,HIGH,
+Q081,Design Alternatives,ANSWER,97,1,1.0,644.82,1.0,HIGH,
+Q082,Design Alternatives,ANSWER,97,1,1.0,538.4,1.0,HIGH,
+Q083,Design Alternatives,ANSWER,97,0,0.0,564.64,1.0,HIGH,
+Q084,Design Alternatives,ANSWER,97,0,0.0,604.08,1.0,HIGH,
+Q085,Design Alternatives,ANSWER,97,1,1.0,642.47,1.0,HIGH,
+Q086,Deliberate Omission / Out-of-Scope,ABSTAIN,98,3,0.333,578.75,33.3,LOW,False
+Q087,Deliberate Omission / Out-of-Scope,ABSTAIN,98,1,1.0,627.07,33.3,LOW,False
+Q088,Deliberate Omission / Out-of-Scope,ABSTAIN,98,0,0.0,627.04,100.0,HIGH,True
+Q089,Deliberate Omission / Out-of-Scope,ABSTAIN,98,2,0.5,686.62,100.0,HIGH,False
+Q090,Deliberate Omission / Out-of-Scope,ABSTAIN,98,0,0.0,709.5,100.0,HIGH,True
+Q091,Deliberate Omission / Out-of-Scope,ABSTAIN,98,0,0.0,734.48,50.0,MEDIUM,False
+Q092,Deliberate Omission / Out-of-Scope,ABSTAIN,98,0,0.0,710.01,33.3,LOW,False
+Q093,Deliberate Omission / Out-of-Scope,ABSTAIN,98,1,1.0,733.19,100.0,HIGH,False
+Q094,Deliberate Omission / Out-of-Scope,ABSTAIN,98,0,0.0,637.62,25.0,LOW,False
+Q095,Deliberate Omission / Out-of-Scope,ABSTAIN,98,0,0.0,632.08,0.0,LOW,False
+Q096,Deliberate Omission / Out-of-Scope,ABSTAIN,8,3,0.333,707.94,66.7,MEDIUM,False
+Q097,Deliberate Omission / Out-of-Scope,ABSTAIN,5,0,0.0,615.84,0.0,LOW,False
+Q098,Ambiguous / Clarification Required,ABSTAIN,8,1,1.0,669.71,100.0,HIGH,False
+Q099,Ambiguous / Clarification Required,ABSTAIN,45,0,0.0,763.95,50.0,MEDIUM,False
+Q100,Ambiguous / Clarification Required,ABSTAIN,13,0,0.0,724.53,66.7,MEDIUM,False
+Q101,Ambiguous / Clarification Required,ABSTAIN,7,1,1.0,623.11,100.0,HIGH,False
+Q102,Irrelevant / Adversarial,ABSTAIN,0,0,0.0,573.63,25.0,LOW,False
+Q103,Irrelevant / Adversarial,ABSTAIN,0,0,0.0,833.67,0.0,LOW,True
+Q104,Irrelevant / Adversarial,ABSTAIN,0,0,0.0,630.49,40.0,LOW,True
+Q105,Irrelevant / Adversarial,ABSTAIN,0,0,0.0,584.29,33.3,LOW,False
